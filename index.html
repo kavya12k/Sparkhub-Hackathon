@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+
+  <!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer> </script>
+
+  <!-- import fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Edu+VIC+WA+NT+Beginner&family=Ibarra+Real+Nova&family=Inter&family=Lato&family=Noto+Sans&family=Poppins&family=Raleway&family=Roboto&family=Roboto+Mono:wght@600&family=Roboto+Slab&family=Rubik+Bubbles&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+ <header>
+   <h1 id="title"> Are you contributing to climate change? </h1>
+   <p>You may be unintentionally contributing to global warming. Answer these 10 questions to figure out how YOU can help clean up our planet. </p>
+ </header>
+
+  <main>
+    <!-- Question 1: -->
+    <h2> You have an empty plastic bottle. Where do you throw it away?</h2>
+
+    <div class="question">
+			<div class="answer-choice">
+				<img src="images/trashcan.png" alt="A cartoon silver trash can with the lid off.">
+        <br>
+        <button onclick="disableBtnOne();" id="q1a1">A trash can.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/bench.png" alt="A cartoon brown bench with the left side being closer to the screen than the right.">
+        <br>
+        <button onclick="disableBtnOne();" id="q1a2">I just leave it<br/> somewhere random.</button> 
+      </div>
+      
+      <div class="answer-choice">
+        <img src="images/recyclingbin.png" alt="A cartoon open green recycling bin with the recycling symbol on the front.">
+        <br>
+        <button onclick="disableBtnOne();" id="q1a3">A recycling bin.</button>
+      </div>
+
+     
+
+    </div>
+    
+
+   <!-- Question 2:  -->
+    
+<h2> You have to get to school, which is 1 mile away. Which mode of transportation do you use?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/car.png" alt="The side view of a cartoon green car. There are two black and silver wheels shown and the two windows are tinted blue.">
+        <br>
+        <button onclick="disableBtnTwo();" id="q2a1">Car or motorcycle.<br/> Me or my parents drive.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/carpool.png" alt="The front view of a cartoon black car. There are five cartoon people in the car, two in the front and three in the back.">
+        <br>
+         <button onclick="disableBtnTwo();" id="q2a2">Carpool. I tag along with a friend<br/> or they tag along with me.</button> 
+      </div>
+      
+     <div class="answer-choice">
+        <img src="images/bike.png" alt="The silhouette of the side view of a man on a bike pedaling and leaning forward.">
+        <br>
+        <button onclick="disableBtnTwo();" id="q2a3">Biking or walking.</button>
+     </div>
+
+     
+
+    </div>
+
+     <!-- Question 3:  -->
+    
+<h2> It's 4 PM on a sunny day and you're inside. Which light do you use to work?</h2>
+
+    <div class = "question">
+      
+			<div class="answer-choice">
+				<img src="images/lightbulb.png" alt = "Two cartoon light bulbs, one white and one yellow.">
+        <br>
+        <button onclick="disableBtnThree();" id="q3a1">Light from the lightbulbs<br/> installed in my room.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/lamp.png" alt="A red lamp emitting yellow light with a blue base and black stem attached to the lamp.">
+        <br>
+        <button onclick="disableBtnThree();" id="q3a2">LEDs / a reading lamp. </button>
+      </div>
+        
+
+      <div class="answer-choice">
+        <img src="images/sunlight.png" alt="A yellow drawing/cartoon of the full sun with 8 triangle yellow rays coming out of the circle.">
+        <br>
+        <button onclick="disableBtnThree();" id="q3a3"> The light from the sun. </button> 
+      </div>
+      
+    </div>
+
+    <!-- Question 4:  -->
+    
+<h2> It's a cold day. What do you use to get warm?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/blanket.png" alt = "A drawing of a black bedframe with a white pillow and a blue blanket on the bed.">
+        <br>
+        <button onclick="disableBtnFour();" id="q4a1">I pile on the blankets!</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/househeater.png" alt="A woman at a desk looking at her laptop with a remote in her hand to control the heater attached to the wall next to her.">
+        <br>
+        <button onclick="disableBtnFour();" id="q4a2">The built-in house heater.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/heaterfan.jpg" alt="A silver heater giving out hot air (portrayed as orange) with 7 buttons on it.">
+        <br>
+        <button onclick="disableBtnFour();" id="q4a3">I use an indoor heater fan.</button> 
+      </div>
+    </div>
+
+     <!-- Question 5:  -->
+    
+<h2>Where do you usually get your water from at home?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/plasticbottle.png" alt = "A light blue plastic water bottle with a green cap and green label that says Fresh.">
+        <br>
+        <button onclick="disableBtnFive();" id="q5a1">Disposable single-use<br/> plastic water bottles.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/sink.png" alt="A silver sink on a white counter with two tan pantry doors below it.">
+        <br>
+        <button onclick="disableBtnFive();" id="q5a2">Water from the tap.</button>
+      </div>
+        
+      <div class="answer-choice">
+        <img src="images/waterjug.png" alt="The blue silhouette of a huge jug of water.">
+        <br>
+        <button onclick="disableBtnFive();" id="q5a3">A plastic reusable jug.</button> 
+      </div>
+        
+    </div>
+
+<!--Question 6:-->
+    
+    <h2>What is your lawn (if you have one) made of?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/fakelawn.png" alt = "Green and lighter green striped football field.">
+        <br>
+        <button onclick="disableBtnSix();" id="q6a1">It's made of artificial <br/> turf (I don't have <br/> to water it).</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/nolawn.png" alt="A tiny house with a red door, 4 windows and a chimney. Background is a solid white and tan color.">
+        <br>
+        <button onclick="disableBtnSix();" id="q6a2">I don't have a lawn.</button>
+      </div>
+        
+      <div class="answer-choice">
+        <img src="images/reallawn.png" alt="Cartoon of a tuft of grass with different shades of green.">
+        <br>
+        <button onclick="disableBtnSix();" id="q6a3">It's made of real grass <br/> (I have to water it <br/> and use fertilizers.)</button> 
+      </div>
+        
+    </div>
+
+    <!--Question 7:-->
+    
+    <h2>What do you do with extra food?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/leftovers.png" alt = "Gray slanted drawn closed refrigerator with black handles.">
+        <br>
+        <button onclick="disableBtnSeven();" id="q7a1">Save it for later <br/> as leftovers.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/throwtrash.png" alt="Metallic cartoon step trash can with the lid slighty open.">
+        <br>
+        <button onclick="disableBtnSeven();" id="q7a2">Throw it away.</button>
+      </div>
+        
+      <div class="answer-choice">
+        <img src="images/compost.jpg" alt="Tree with different layers of mud under it with different colors for each layer.">
+        <br>
+        <button onclick="disableBtnSeven();" id="q7a3">Use it for compost <br/> (if it can be used).</button> 
+      </div>
+        
+    </div>
+
+    <!--Question 8:-->
+    
+    <h2>Where do your clothes come from?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/sustainable.png" alt = "A heart of green icons such as shirts, clovers, bags, leaves, and footprints etc.">
+        <br>
+        <button onclick="disableBtnEight();" id="q8a1">Sustainable stores <br/> like <a href = https://www.thegoodtrade.com/features/fair-trade-clothing>these.</a></button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/fastfashion.png" alt="A blue cartoon hoodie from the front view.">
+        <br>
+        <button onclick="disableBtnEight();" id="q8a2">Fast fashion stores <br/> like Shein, Zara, <br/> or other big name brands.</button>
+      </div>
+        
+      <div class="answer-choice">
+        <img src="images/knitting.png" alt="A ball of green yarn with two sticks poked through the middle.">
+        <br>
+        <button onclick="disableBtnEight();" id="q8a3">I crochet / knit / make <br/> them myself if I can.</button> 
+      </div>
+        
+    </div>
+
+    <!--Question 9:-->
+    
+    <h2>What would you do if you see your friend litter?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/throwing.png" alt = "A black silhouette of a man throwing three pieces of trash in the trash can.">
+        <br>
+        <button onclick="disableBtnNine();" id="q9a1">Pick the trash up <br/> and throw it away.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/talking.png" alt="Two women talking to eachother. One has a red dress and heels and is holding a purse. The one on the right has a blue shirt, glasses, gray pants and black heels.">
+        <br>
+        <button onclick="disableBtnNine();" id="q9a2">Tell your friend that <br/> they littered and ask <br/> them to throw it away.</button>
+      </div>
+        
+      <div class="answer-choice">
+        <img src="images/litter.png" alt="A drawing of a hand throwing three pieces of trash on the ground with a big red circle and line through the picture.">
+        <br>
+        <button onclick="disableBtnNine();" id="q9a3">Leave / ignore it.</button> 
+      </div>
+        
+    </div>
+
+    <!--Question 10:-->
+    
+    <h2>How aware do you think you are of the causes and effects of climate change?</h2>
+
+    <div class = "question">
+			<div class="answer-choice">
+				<img src="images/veryaware.png" alt = "A cartoon of the Earth with animals people and landmarks in a circle around the Earth.">
+        <br>
+        <button onclick="disableBtnTen();" id="q10a1">Extremely aware.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="images/modaware.png" alt="A drawing of a black recycling bin with things in it. It has the words 'We Recycle!' on the front along with a recycling symbol.">
+        <br>
+        <button onclick="disableBtnTen();" id="q10a2">Moderately aware.</button>
+      </div>
+        
+      <div class="answer-choice">
+        <img src="images/notaware.png" alt="A big question mark with green scribbles.">
+        <br>
+        <button onclick="disableBtnTen();" id="q10a3">Barely / not aware.</button> 
+      </div>
+        
+    </div>
+
+    <!-- Results and reset:  -->
+    
+    <p id = "result"></p>
+  <button id="displayResult">Click for Results!</button> 
+<button onclick="restartThis();" id="reset">Restart Quiz</button>
+
+    <!-- Fact Generator -->
+
+    <div class="factGenerator">
+  <h3>Why should you strive for greener options? <span class = "italicize"> Source: <a href="https://climate.nasa.gov/">NASA</a></span></h3>
+  <button id="factBtn"> Click Me! </button>
+  <p id="fact"></p>
+  
+  
+</div>
+        
+  </main>
+  
+</body>
+
+</html>
